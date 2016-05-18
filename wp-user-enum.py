@@ -12,4 +12,4 @@ for num in range(15):
         geturi=str(response.geturl())
         print geturi.split("/author",1)[1].replace("/",'').lstrip()
     except Exception, e:
-    
+        pass
