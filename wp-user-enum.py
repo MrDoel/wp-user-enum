@@ -1,9 +1,7 @@
 #!/usr/bin/python
-"""
-WP User Enum
-Author     : Mr.Doel
-E-email    : doel@indonesiancoder.com
-"""
+#WP User Enum
+#Author     : Mr.Doel
+#E-email    : doel@indonesiancoder.com
 import urllib2,sys
 url=sys.argv[1]
 for num in range(15):
