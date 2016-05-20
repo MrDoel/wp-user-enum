@@ -4,7 +4,7 @@
 #E-email    : doel@indonesiancoder.com
 import urllib2,sys
 url=sys.argv[1]
-for num in range(15):
+for num in range(1,15):
     try:
         response = urllib2.urlopen(url + "/?author=%s" % (num))
         geturi=str(response.geturl())
