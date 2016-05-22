@@ -7,7 +7,7 @@ __email__   ="doel@indonesiancoder.com"
 __version__ ="1.1"
 __license__ ="GPL"
 
-parser=argparse.ArgumentParser(description="WP Auto Brute",version='1.1')
+parser=argparse.ArgumentParser(description="WP User Enum",version='1.1')
 parser.add_argument('-u','--url',metavar='http[s]://www.site.com',help="Input URL",required=True,type=str)
 args=parser.parse_args()
 url=args.url
