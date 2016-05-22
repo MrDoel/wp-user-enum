@@ -1,15 +1,16 @@
 #!/usr/bin/python
-
-#WP User Enum
-#Author      : Mr.Doel
-#E-email     : doel@indonesiancoder.com
-#Version     : 1.1
-
-import urllib2
-import sys
-import re
+import urllib2,opt,argparse
 from BeautifulSoup import BeautifulSoup
 
+__author__  ="Mr.Doel"
+__email__   ="doel@indonesiancoder.com"
+__version__ ="1.1"
+__license__ ="GPL"
+
+parser=argparse.ArgumentParser(description="WP Auto Brute",version='1.1')
+parser.add_argument('-u','--url',metavar='http[s]://www.site.com',help="Input URL",required=True,type=str)
+args=parser.parse_args()
+url=args.url
 def main():
     for num in range(1,15):
         try:
@@ -24,8 +25,4 @@ def main():
                 print geturi.split("/author", 1)[1].replace("/", '').lstrip()
         except Exception, e:
             pass
-if len(sys.argv) > 1:
-    url = sys.argv[1]
-    main()
-else:
-    print "usage :",sys.argv[0], "<URL>"
+main()
