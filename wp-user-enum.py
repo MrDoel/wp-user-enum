@@ -4,7 +4,7 @@ from BeautifulSoup import BeautifulSoup
 
 __author__  ="Mr.Doel"
 __email__   ="doel@indonesiancoder.com"
-__version__ ="1.1"
+__version__ ="1.0"
 __license__ ="GPL"
 
 parser=argparse.ArgumentParser(description="WP User Enum",version='1.1')
